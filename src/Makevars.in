@@ -1,0 +1,5 @@
+# Use C++11 if available
+CXX_STD=CXX11
+
+PKG_CPPFLAGS = -I./lib @cflags@
+PKG_LIBS += @libs@
