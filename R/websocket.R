@@ -1,6 +1,7 @@
 #' @useDynLib websocket, .registration = TRUE
 #' @import later
 #' @importFrom Rcpp sourceCpp
+#' @importFrom R6 R6Class
 #' @include RcppExports.R
 NULL
 
@@ -100,7 +101,7 @@ null_func <- function(...) { }
 #'           termination of the connection or endpoint.}
 #'   }
 #'
-#'   All logging levels are explained in more detail at \url{https://www.zaphoyd.com/websocketpp/manual/reference/logging}.
+#'   All logging levels are explained in more detail at \url{https://docs.websocketpp.org/reference_8logging.html}.
 #' @param errorLogChannels A character vector of error log channels that are
 #'   displayed.  The default value is \code{NULL}, which will use default websocketpp behavior.
 #'   Multiple error logging levels may be passed in for them to be enabled.
@@ -113,7 +114,7 @@ null_func <- function(...) { }
 #'     \item{\code{"disconnect"}}{One line for each new connection that is closed}
 #'   }
 #'
-#'   All logging levels are explained in more detail at \url{https://www.zaphoyd.com/websocketpp/manual/reference/logging}.
+#'   All logging levels are explained in more detail at \url{https://docs.websocketpp.org/reference_8logging.html}.
 #' @param maxMessageSize The maximum size of a message in bytes. If a message
 #'   larger than this is sent, the connection will fail with the \code{message_too_big}
 #'   protocol error.
@@ -143,7 +144,7 @@ null_func <- function(...) { }
 NULL
 
 #' @export
-WebSocket <- R6::R6Class("WebSocket",
+WebSocket <- R6Class("WebSocket",
   public = list(
     initialize = function(url,
       protocols = character(0),
@@ -271,7 +272,7 @@ WebSocket <- R6::R6Class("WebSocket",
   )
 )
 
-Callbacks <- R6::R6Class(
+Callbacks <- R6Class(
   'Callbacks',
   private = list(
     .nextId = integer(0),
