@@ -1,3 +1,8 @@
+1.3.1
+=====
+
+* Increased OpenSSL system requirement from 1.0.1 to 1.0.2.
+
 1.3.0
 =====
 
