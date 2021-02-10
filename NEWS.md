@@ -1,3 +1,12 @@
+1.3.2
+=====
+
+* Made a tweak to autobrew in `configure` script. (@jeroen, #75)
+
+* Added a proxy example to README.
+
+* Made tests more reliable by eliminating need for external connections.
+
 1.3.1
 =====
 
