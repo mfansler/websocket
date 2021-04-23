@@ -1,3 +1,8 @@
+1.4.0
+=====
+
+* Switched away from Rcpp and BH, to cpp11. (#73)
+
 1.3.2
 =====
 
