@@ -1,8 +1,8 @@
-# websocket <img src="man/figures/websocket_logo.svg" align="right" height="250px" />
+# websocket <a href='https://rstudio.github.io/websocket/'><img src='man/figures/logo.svg' align="right" height="139" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/websocket)](https://cran.r-project.org/package=websocket)
-[![R build status](https://github.com/rstudio/websocket/workflows/R-CMD-check/badge.svg)](https://github.com/rstudio/websocket/actions)
+[![R build status](https://github.com/rstudio/websocket/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rstudio/websocket/actions)
 <!-- badges: end -->
 
 This is an R WebSocket client library backed by the [websocketpp](https://github.com/zaphoyd/websocketpp) C++ library. WebSocket I/O is handled on a separate thread from R.
