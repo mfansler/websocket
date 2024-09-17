@@ -1,4 +1,4 @@
-PKG_CPPFLAGS = -I./lib @cflags@
+PKG_CPPFLAGS = -I./lib -DBOOST_ASIO_DISABLE_STD_ALIGNED_ALLOC @cflags@
 PKG_LIBS += @libs@
 
 #### Debugging flags ####
